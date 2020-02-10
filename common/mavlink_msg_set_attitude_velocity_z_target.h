@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE SET_ATTITUDE_VELOCITY_Z_TARGET PACKING
 
-#define MAVLINK_MSG_ID_SET_ATTITUDE_VELOCITY_Z_TARGET 9002
+#define MAVLINK_MSG_ID_SET_ATTITUDE_VELOCITY_Z_TARGET 9030
 
 MAVPACKED(
 typedef struct __mavlink_set_attitude_velocity_z_target_t {
@@ -17,17 +17,17 @@ typedef struct __mavlink_set_attitude_velocity_z_target_t {
 
 #define MAVLINK_MSG_ID_SET_ATTITUDE_VELOCITY_Z_TARGET_LEN 23
 #define MAVLINK_MSG_ID_SET_ATTITUDE_VELOCITY_Z_TARGET_MIN_LEN 23
-#define MAVLINK_MSG_ID_9002_LEN 23
-#define MAVLINK_MSG_ID_9002_MIN_LEN 23
+#define MAVLINK_MSG_ID_9030_LEN 23
+#define MAVLINK_MSG_ID_9030_MIN_LEN 23
 
 #define MAVLINK_MSG_ID_SET_ATTITUDE_VELOCITY_Z_TARGET_CRC 215
-#define MAVLINK_MSG_ID_9002_CRC 215
+#define MAVLINK_MSG_ID_9030_CRC 215
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_SET_ATTITUDE_VELOCITY_Z_TARGET { \
-    9002, \
+    9030, \
     "SET_ATTITUDE_VELOCITY_Z_TARGET", \
     8, \
     {  { "time_boot_ms", NULL, MAVLINK_TYPE_UINT32_T, 0, 0, offsetof(mavlink_set_attitude_velocity_z_target_t, time_boot_ms) }, \
