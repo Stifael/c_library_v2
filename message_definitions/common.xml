@@ -6250,5 +6250,16 @@
       <field type="uint8_t" name="msg_pack_size">Number of encoded messages in the pack (not the number of bytes). Allowed range is 1 - 10.</field>
       <field type="uint8_t[250]" name="messages">Concatenation of encoded OpenDroneID messages. Shall be filled with nulls in the unused portion of the field.</field>
     </message>
+    <message id="12916" name="SET_ATTITUDE_VELOCITY_Z_TARGET">
+      <description>Sets a desired vehicle attitude and altitude. Used by an external controller to command the vehicle (manual controller or other system).</description>
+      <field type="uint32_t" name="time_boot_ms" units="ms">Timestamp (time since system boot).</field>
+      <field type="uint8_t" name="target_system">System ID</field>
+      <field type="uint8_t" name="target_component">Component ID</field>
+      <field type="float" name="roll" units="rad">Euler roll in rad</field>
+      <field type="float" name="pitch" units="rad">Euler pitch in rad</field>
+      <field type="float" name="body_yaw_rate" units="rad/s">Body yaw rate</field>
+      <field type="float" name="velocity_z" units="m/s">Velocity in z-direction NED frame.</field>
+      <field type="uint8_t" name="hold_alt">Boolean indicating if 0-velocity should result in altitude hold.</field>
+    </message>
   </messages>
 </mavlink>
